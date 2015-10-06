@@ -1,0 +1,55 @@
+@import colors
+@import media
+    
+//  Optin
+.CTA
+    background: $DarkBlue
+    padding: 2rem 0
+    border: none
+        radius: .333rem
+        
+    @media #{$sml}
+        border-radius: 0
+        width: 100%
+        
+    label
+        text-align: left
+        display: block
+        width: 75%
+        margin: 0 auto
+        color: white
+        
+    input[type="email"]
+        display: block
+        width: 75%
+        padding: .333rem
+        margin: .333rem auto
+        font: 
+            size: 1rem
+        border: 1px solid $DarkBlue
+            radius: .333rem
+        box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50)
+        
+        &:active
+            outline: 2px solid $Red
+    
+        &:focus
+            outline: 2px solid $Red
+        
+    input[type="submit"]
+        display: block
+        width: 75%
+        padding: .5rem 1rem
+        margin: 1rem auto 0
+        color: white
+        font: 
+            size: 1rem
+        transition: all .25s ease-in-out
+        background: $Red
+        border: none
+            radius: .333rem
+            bottom: .333rem solid $DarkRed                
+                
+        &:hover
+            cursor: pointer
+            background: hsla(6, 85%, 60%, 1)
